@@ -6,11 +6,3 @@ vim.keymap.set('n', '<leader>ps', function()
 	builtin.grep_string({ search = vim.fn.input("grep > ") })
 end)
 
---local icons = require("nvim-web-devicons")
---require("telescope").setup({
---  defaults = {
---    prompt_prefix = "  " .. icons.get_icon("telescope") .. "  ",
- --   selection_caret = " ❯ ",
-   -- entry_prefix = "   ",
-  --},
---})
