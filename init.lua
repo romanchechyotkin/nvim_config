@@ -1,3 +1,2 @@
 require("bin")
-
 print("hello")

@@ -20,7 +20,8 @@ return require('packer').startup(function(use)
 			end,}
   use("nvim-treesitter/playground")
   use("theprimeagen/harpoon")
-
+  use 'ray-x/go.nvim'
+  use 'ray-x/guihua.lua' -- recommended if need floating window support
   --  use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
