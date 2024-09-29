@@ -52,5 +52,26 @@ cmp.setup({
       vim.snippet.expand(args.body)
     end,
   },
-  mapping = cmp.mapping.preset.insert({}),
+   mapping = cmp.mapping.preset.insert({
+    -- Navigate the completion menu with Tab
+    ['<Tab>'] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      else
+        fallback()
+      end
+    end, {'i', 's'}),  -- 'i' for insert mode, 's' for select mode
+
+    -- Navigate backwards in the completion menu with Shift+Tab
+    ['<S-Tab>'] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_prev_item()
+      else
+        fallback()
+      end
+    end, {'i', 's'}),
+
+    -- Confirm completion with Enter
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+  }),
 })
