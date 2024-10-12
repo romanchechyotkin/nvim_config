@@ -25,4 +25,17 @@ return require('packer').startup(function(use)
   use({'williamboman/mason.nvim'})
   use({'williamboman/mason-lspconfig.nvim'})
 
+  -- Commenting Text
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
+  -- Golang
+  use('nvim-lua/plenary.nvim')
+  use('crispgm/nvim-go')
+  use('rcarriga/nvim-notify')
+
 end)

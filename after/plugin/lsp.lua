@@ -24,10 +24,12 @@ lsp_zero.extend_lspconfig({
   capabilities = require('cmp_nvim_lsp').default_capabilities(),
 })
 
+---
 -- LSP Servers 
+---
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'rust_analyzer', 'gopls', 'pyright', 'ocaml-lsp'},
+  ensure_installed = {'rust_analyzer', 'gopls', 'pyright'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
