@@ -169,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/user/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-delve"] = {
+    loaded = true,
+    path = "/home/user/.local/share/nvim/site/pack/packer/start/vim-delve",
+    url = "https://github.com/sebdah/vim-delve"
   }
 }
 

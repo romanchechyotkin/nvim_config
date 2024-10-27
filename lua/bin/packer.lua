@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
   use({'leoluz/nvim-dap-go'})
   use({'nvim-neotest/nvim-nio'})
   use({'rcarriga/nvim-dap-ui'})
+  use({'sebdah/vim-delve'})
 
   -- Commenting Text
   use {
