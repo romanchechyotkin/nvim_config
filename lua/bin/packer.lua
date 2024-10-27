@@ -24,6 +24,10 @@ return require('packer').startup(function(use)
   use({'hrsh7th/cmp-nvim-lsp'})
   use({'williamboman/mason.nvim'})
   use({'williamboman/mason-lspconfig.nvim'})
+  use({'mfussenegger/nvim-dap'})
+  use({'leoluz/nvim-dap-go'})
+  use({'nvim-neotest/nvim-nio'})
+  use({'rcarriga/nvim-dap-ui'})
 
   -- Commenting Text
   use {
