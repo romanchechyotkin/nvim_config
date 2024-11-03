@@ -39,6 +39,13 @@ require('mason-lspconfig').setup({
   }
 })
 
+require('lspconfig').gopls.setup {
+  settings = {
+    gopls = {
+      buildFlags = {"-tags=integration,unit"},
+    },
+  },
+}
 ---
 -- Autocompletion setup
 ---
